@@ -1,0 +1,144 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto', sans-serif;
+}
+:root{
+	--main-color:#151E61;
+}
+/* banner */
+.add-1{
+    background: #80808061;
+    border-radius: 10px;
+}
+.add-1 h5{
+    font-size: 17px;
+    font-weight: bold;
+}
+.add-1 h4{
+    color:var(--main-color) ;
+    font-weight: bold;
+    font-size: 19px;
+}
+/* banner */
+
+/* poular start*/
+.popular-categori-box{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 25px;
+}
+.popular-product{
+    border: 2px solid var(--main-color);
+}
+.popular-product{
+    border-radius: 10px;
+    margin-top: 15px;
+}
+.popular-product h4{
+    color:var(--main-color);
+    font-weight: bold;
+    font-size: 18px;
+}
+.popular-img img {
+    height: 100px;
+}
+/* poular end*/
+
+/* just now */
+.justNow-heading h4,.popular-heading h4{
+	font-size:20px;
+	font-weight:700;
+	color:var(--main-color);	
+}
+
+.product-1{
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+	transition: all .4s;
+}
+.product-1:hover{
+	transform: translateY(-15px);
+}
+.flash-heading{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.product-img{
+	position: relative;
+}
+.veiw-btn{
+	position: absolute;
+	height:0;
+	width:100%;
+	left:0;
+	bottom: 0;
+	background:#000000bd;
+	opacity:0;
+	transition:all .4s;
+}
+.veiw-btn button{
+	cursor: pointer;
+	padding:10px 20px;
+	outline: none;
+	border: none;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform: translate(-50%, -50%);
+    border-radius: 10px;
+}
+.veiw-btn button a{
+	text-decoration: none;
+	color: white;
+	font-weight:700;
+}
+.product-1:hover .veiw-btn{
+	height:100%;
+	opacity:1;
+}
+.product-text{
+	display: flex;
+	justify-content: space-between;
+	padding-top:10px;
+	padding-bottom:10px;
+	padding-right:10px;
+	padding-left:10px;
+}
+.product-name h6,.price h6{
+	font-size: 14px;
+    font-weight: 700;
+    color:var(--main-color);
+    margin-bottom: 0px;
+}
+
+.product-name p,.price p{
+	font-size: 15px;
+
+}
+.product-img{
+    height: 300px;
+   
+}
+.footer{
+    background:var(--main-color) ;
+    color: white;
+}
+/* just now  end*/ 
+
+
+/* responsive */
+@media(max-width:768px){
+    .popular-categori-box{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-gap: 25px;
+    }
+}
+@media(max-width:576px){
+    .popular-categori-box{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 25px;
+    }
+}
